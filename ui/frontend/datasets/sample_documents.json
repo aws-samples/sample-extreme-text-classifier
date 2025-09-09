@@ -1,0 +1,40 @@
+{
+  "id": "sample_documents",
+  "name": "Document Type Classification",
+  "description": "Classification of common business document types",
+  "classes": [
+    {
+      "name": "Invoice",
+      "description": "Bills and invoices for goods or services",
+      "examples": [
+        "Invoice for office supplies delivery",
+        "Service invoice for consulting work",
+        "Monthly utility bill"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Contract",
+      "description": "Legal agreements and contracts",
+      "examples": [
+        "Employment contract",
+        "Service agreement",
+        "Non-disclosure agreement"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Report",
+      "description": "Business reports and analysis documents",
+      "examples": [
+        "Quarterly financial report",
+        "Market analysis report",
+        "Project status report"
+      ],
+      "metadata": {}
+    }
+  ],
+  "embeddings_generated": false,
+  "created_at": "2024-01-10T09:00:00Z",
+  "updated_at": "2024-01-18T16:45:00Z"
+}

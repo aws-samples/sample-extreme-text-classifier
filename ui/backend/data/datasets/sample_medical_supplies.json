@@ -1,0 +1,90 @@
+{
+  "id": "sample_medical_supplies",
+  "name": "Medical Supplies Classification",
+  "description": "Comprehensive classification dataset for medical equipment and supplies with 10 distinct categories",
+  "classes": [
+    {
+      "name": "Diagnostic Equipment",
+      "description": "Medical devices used for diagnosis and monitoring",
+      "examples": [
+        "PRODUCT: MediTemp Pro Digital Thermometer\nModel: MT-2024\nFeatures: Infrared non-contact measurement, fever alert system with color-coded display, memory for last 20 readings\nAccuracy: ±0.2°C (±0.4°F)\nMeasurement Range: 32.0°C to 42.9°C (89.6°F to 109.2°F)\nResponse Time: 1 second\nBattery Life: 3000+ measurements\nFDA Approved: Yes\nIdeal for: Hospitals, clinics, home use\nWarranty: 2 years manufacturer warranty"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Surgical Instruments",
+      "description": "Tools and instruments used in surgical procedures",
+      "examples": [
+        "PRODUCT: SurgiCut Premium Surgical Scissors\nModel: SC-125-CVD\nBlade Length: 12.5 cm (5 inches)\nMaterial: German stainless steel with titanium coating\nTip Design: Curved, sharp/blunt configuration\nSterilization: Autoclavable up to 134°C, gamma radiation compatible\nFinish: Satin finish to reduce glare\nHandle: Ergonomic finger rings with non-slip texture\nApplication: General surgery, tissue cutting, suture removal\nPackaging: Individual sterile packaging\nCompliance: ISO 13485, CE marked\nShelf Life: 5 years when properly stored"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Medical Consumables",
+      "description": "Single-use medical supplies and consumables",
+      "examples": [
+        "PRODUCT: SafeGuard Nitrile Examination Gloves\nModel: SG-NIT-100\nMaterial: 100% nitrile rubber, latex-free, powder-free\nThickness: 4.0 mil (0.10 mm) for enhanced tactile sensitivity\nSizes Available: XS, S, M, L, XL\nColor: Blue with textured fingertips for improved grip\nCompliance: FDA 510(k) cleared, ASTM D6319 tested\nPackaging: 100 gloves per box, 10 boxes per case\nShelf Life: 5 years from manufacture date\nApplications: Medical examinations, laboratory work, infection control\nFeatures: Puncture resistant, chemical splash protection, ambidextrous design\nCertifications: ISO 13485, CE marked, AQL 1.5"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Patient Monitoring",
+      "description": "Devices for continuous patient monitoring and vital signs tracking",
+      "examples": [
+        "PRODUCT: VitalWatch Continuous Patient Monitor\nModel: VW-5000-ICU\nDisplay: 15-inch high-resolution touchscreen with customizable layouts\nParameters: ECG (12-lead), SpO2, NIBP, IBP, Temperature, Respiration, CO2\nAlarms: Configurable audio/visual alarms with escalation protocols\nData Storage: 72-hour trend data, 1000+ alarm events\nConnectivity: Hospital network integration, HL7 compatibility\nBattery: 4-hour backup power, hot-swappable battery system\nCertifications: FDA 510(k), IEC 60601-1, CE marked\nMounting: Mobile cart, wall mount, or bedside rail options\nUser Interface: Multi-language support, customizable user profiles\nWarranty: 3 years parts and labor, 24/7 technical support"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Rehabilitation Equipment",
+      "description": "Equipment for physical therapy and patient rehabilitation",
+      "examples": [
+        "PRODUCT: FlexiTherapy Multi-Station Rehabilitation System\nModel: FT-REHAB-2024\nStations: 8 exercise stations with adjustable resistance\nResistance Range: 5-200 lbs pneumatic resistance system\nExercises: Upper/lower extremity, core strengthening, balance training\nAdjustability: Height, angle, and resistance fully adjustable\nSafety Features: Emergency stop buttons, safety straps, non-slip surfaces\nDisplay: Digital feedback system showing reps, time, and progress\nConstruction: Heavy-duty steel frame with medical-grade upholstery\nDimensions: 12' x 8' x 8' (L x W x H)\nCapacity: Supports patients up to 350 lbs\nCompliance: ADA compliant, FDA registered\nWarranty: 5 years structural, 2 years electronics\nInstallation: Professional installation and staff training included"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Laboratory Equipment",
+      "description": "Equipment for medical testing and laboratory analysis",
+      "examples": [
+        "PRODUCT: LabMax Automated Chemistry Analyzer\nModel: LM-CHEM-800\nThroughput: 800 tests per hour with STAT priority handling\nTest Menu: 100+ chemistry assays including cardiac markers, liver function, lipids\nSample Types: Serum, plasma, urine, CSF\nSample Volume: 2-35 μL depending on test\nReagent Management: Onboard refrigerated reagent storage for 25 reagents\nCalibration: Automatic calibration with quality control integration\nConnectivity: LIS/HIS integration, barcode scanning\nMaintenance: Automated daily maintenance routines\nResults: Real-time result reporting with delta checks\nCertifications: CLIA waived tests available, FDA 510(k) cleared\nDimensions: 48\" x 30\" x 42\" (L x W x H)\nPower: 110-240V, 50/60Hz universal power supply"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Emergency Medical Equipment",
+      "description": "Critical care equipment for emergency and trauma situations",
+      "examples": [
+        "PRODUCT: LifeSaver Emergency Defibrillator/Monitor\nModel: LS-DEFIB-AED-Pro\nDefibrillation: Biphasic waveform, 2-200 Joules energy range\nMonitoring: 3/5/12-lead ECG, SpO2, NIBP, temperature\nPacing: External transcutaneous pacing 30-180 ppm\nDisplay: 8-inch color LCD with waveform display\nBattery: Lithium-ion, 4+ hours continuous monitoring\nData: 8+ hours of patient data storage, event summary\nConnectivity: WiFi/Bluetooth for data transfer\nDurability: IP55 rated, drop tested to 1.5 meters\nWeight: 8.2 lbs including battery\nCompliance: FDA cleared, AHA guidelines compliant\nAccessories: Adult/pediatric pads, carrying case, training materials\nWarranty: 8 years or 1000 shocks, comprehensive service plan available"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Imaging Equipment",
+      "description": "Medical imaging devices for diagnostic purposes",
+      "examples": [
+        "PRODUCT: ClearView Portable Ultrasound System\nModel: CV-US-2024-Pro\nTransducers: Linear, convex, phased array, and endocavitary probes included\nFrequency Range: 2-15 MHz with harmonic imaging\nDisplay: 21.5-inch LED monitor with touch interface\nImaging Modes: B-mode, M-mode, Color Doppler, Power Doppler, 3D/4D\nImage Quality: High-resolution beamforming with speckle reduction\nStorage: 500GB internal storage, DICOM 3.0 compatible\nConnectivity: USB, Ethernet, WiFi, DICOM print/store\nBattery: 3-hour continuous scanning capability\nWeight: 15 lbs main unit, portable design\nApplications: Cardiology, OB/GYN, abdominal, vascular, MSK\nCertifications: FDA 510(k), CE marked, ISO 13485\nTraining: Comprehensive training program and clinical applications support"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Sterilization Equipment",
+      "description": "Equipment for sterilizing medical instruments and supplies",
+      "examples": [
+        "PRODUCT: SteriliMax Autoclave Sterilization System\nModel: SM-AUTO-450L\nChamber Size: 450 liters (24\" x 24\" x 48\")\nSterilization Cycles: Steam, pre-vacuum, liquid, flash sterilization\nTemperature Range: 121°C to 134°C with ±1°C accuracy\nPressure: 15-30 PSI operating range\nCycle Time: 15-60 minutes depending on load and cycle type\nDrying: Post-sterilization vacuum drying system\nValidation: Built-in biological and chemical indicator testing\nRecording: Digital data logging with printout capability\nSafety: Automatic door locking, pressure relief systems\nConstruction: Stainless steel chamber and piping\nUtilities: Steam, compressed air, water, electrical connections required\nCompliance: FDA registered, ASME pressure vessel certified\nWarranty: 2 years parts and labor, preventive maintenance program available"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Anesthesia Equipment",
+      "description": "Equipment for anesthesia delivery and patient sedation",
+      "examples": [
+        "PRODUCT: AnesFlow Advanced Anesthesia Workstation\nModel: AF-AWS-3000\nVentilation: Volume/pressure controlled, SIMV, pressure support modes\nGas Delivery: Isoflurane, sevoflurane, desflurane vaporizers\nMonitoring: Capnography, pulse oximetry, airway pressure, gas analysis\nSafety Systems: Oxygen failure protection, hypoxic guard, scavenging system\nDisplay: 19-inch touchscreen with integrated patient monitoring\nCompliance: Automatic pre-use checkout, leak testing, calibration\nAlarms: Comprehensive alarm system with audio/visual indicators\nData Management: Electronic anesthesia records, trend data storage\nMobility: Mobile cart with locking casters and cable management\nPower: Uninterruptible power supply with battery backup\nCertifications: FDA 510(k), IEC 60601-2-13, CE marked\nService: 24/7 technical support, comprehensive service contracts available\nTraining: Clinical education and competency programs included"
+      ],
+      "metadata": {}
+    }
+  ],
+  "embeddingsGenerated": false,
+  "created_at": "2024-01-15T10:00:00Z",
+  "updated_at": "2024-08-14T10:30:00Z"
+}

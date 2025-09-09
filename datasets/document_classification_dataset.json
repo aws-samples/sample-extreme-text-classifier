@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "domain": "document types",
+    "num_classes": 6,
+    "generated_by": "Manual",
+    "model": "Custom",
+    "version": "1.0"
+  },
+  "classes": [
+    {
+      "name": "Invoice",
+      "description": "Financial invoices, bills, receipts, and billing documents containing payment information, amounts, dates, vendor details, and transaction records."
+    },
+    {
+      "name": "Technical Manual",
+      "description": "Technical documentation, user guides, instruction manuals, API documentation, and how-to documents with procedures, specifications, and technical details."
+    },
+    {
+      "name": "Legal Contract",
+      "description": "Legal agreements, contracts, terms of service, privacy policies, licensing agreements, and regulatory compliance documents with legal terms and conditions."
+    },
+    {
+      "name": "Business Report",
+      "description": "Business reports, financial statements, analytics reports, quarterly reports, and corporate communications containing data, insights, and business metrics."
+    },
+    {
+      "name": "Research Paper",
+      "description": "Academic papers, research studies, white papers, scientific publications, and scholarly articles with research findings, methodologies, and citations."
+    },
+    {
+      "name": "Marketing Material",
+      "description": "Promotional content, brochures, advertisements, marketing communications, product catalogs, and sales materials designed to promote products or services."
+    }
+  ]
+}

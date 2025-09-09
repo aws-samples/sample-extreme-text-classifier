@@ -1,0 +1,30 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+uv.lock
+.python-version
+.kiro
+.vscode/
+
+sandbox/
+
+.DS_Store
+.bedrock_agentcore.yaml
+.dockerignore
+
+# Output files
+output/
+
+# Demo log files
+ui/backend/backend.log
+ui/frontend/frontend.log
+
+*.tmp

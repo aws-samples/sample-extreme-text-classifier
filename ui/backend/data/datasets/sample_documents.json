@@ -1,0 +1,90 @@
+{
+  "id": "sample_documents",
+  "name": "Document Type Classification",
+  "description": "Comprehensive classification of business document types with 10 distinct categories",
+  "classes": [
+    {
+      "name": "Invoice",
+      "description": "Bills and invoices for goods or services",
+      "examples": [
+        "INVOICE #INV-2024-001\n\nBill To: ABC Corporation\n123 Business Ave\nNew York, NY 10001\n\nDate: January 15, 2024\nDue Date: February 14, 2024\n\nDescription: Office supplies delivery including printer paper, pens, folders, and desk organizers.\n\nQuantity: 1 lot\nUnit Price: $245.50\nTotal Amount: $245.50\n\nPayment Terms: Net 30 days\nPlease remit payment within 30 days to avoid late fees."
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Contract",
+      "description": "Legal agreements and contracts",
+      "examples": [
+        "EMPLOYMENT AGREEMENT\n\nThis Employment Agreement is entered into between DataTech Inc. (\"Company\") and Sarah Johnson (\"Employee\") effective January 1, 2024.\n\n1. POSITION AND DUTIES\nEmployee shall serve as Senior Software Engineer and shall perform duties including software development, code review, and technical documentation.\n\n2. COMPENSATION\nEmployee shall receive an annual salary of $95,000, payable bi-weekly.\n\n3. BENEFITS\nEmployee is eligible for health insurance, dental coverage, 401(k) matching, and 15 days paid vacation annually.\n\n4. TERMINATION\nEither party may terminate this agreement with two weeks written notice.\n\nBy signing below, both parties agree to the terms set forth in this agreement."
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Report",
+      "description": "Business reports and analysis documents",
+      "examples": [
+        "QUARTERLY FINANCIAL REPORT - Q4 2023\n\nEXECUTIVE SUMMARY\nTechCorp Inc. achieved strong financial performance in Q4 2023, with revenue growth of 15% year-over-year and improved profit margins.\n\nKEY FINANCIAL METRICS:\n- Total Revenue: $2.4M (up 15% from Q4 2022)\n- Gross Profit: $1.6M (67% margin)\n- Net Income: $485K (20% margin)\n- Cash Flow from Operations: $520K\n\nREVENUE BREAKDOWN:\n- Software Licenses: $1.8M (75%)\n- Professional Services: $400K (17%)\n- Support & Maintenance: $200K (8%)\n\nOUTLOOK:\nWe expect continued growth in Q1 2024 driven by new product launches and expanded market presence."
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Purchase Order",
+      "description": "Orders for goods or services from suppliers",
+      "examples": [
+        "PURCHASE ORDER #PO-2024-0156\n\nVendor: Office Solutions Inc.\n789 Supply Street\nChicago, IL 60601\n\nShip To: TechCorp Headquarters\n456 Innovation Drive\nSan Francisco, CA 94105\n\nOrder Date: February 10, 2024\nRequired Delivery: February 25, 2024\n\nITEMS ORDERED:\n1. Ergonomic Office Chairs (Model: EC-2000) - Qty: 25 - Unit Price: $299.99 - Total: $7,499.75\n2. Standing Desks (Model: SD-Pro) - Qty: 15 - Unit Price: $449.99 - Total: $6,749.85\n3. Monitor Arms (Model: MA-Dual) - Qty: 30 - Unit Price: $89.99 - Total: $2,699.70\n\nSubtotal: $16,949.30\nShipping: $250.00\nTax: $1,355.94\nTOTAL: $18,555.24\n\nPayment Terms: Net 30\nAuthorized By: Michael Chen, Procurement Manager"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Receipt",
+      "description": "Proof of payment for transactions",
+      "examples": [
+        "RECEIPT\n\nBest Buy Store #1247\n2100 Mall Drive, Austin, TX 78759\nPhone: (512) 555-0199\n\nDate: March 5, 2024\nTime: 2:47 PM\nCashier: Jennifer M.\nTransaction #: 4567891234\n\nITEMS PURCHASED:\nLaptop Computer - HP Pavilion 15\" - $699.99\nWireless Mouse - Logitech MX Master 3 - $99.99\nLaptop Bag - Samsonite Professional - $79.99\nExtended Warranty (2 years) - $149.99\n\nSubtotal: $1,029.96\nTax (8.25%): $84.97\nTOTAL: $1,114.93\n\nPayment Method: Credit Card ****1234\nApproval Code: 567890\n\nThank you for shopping with us!\nReturn Policy: 15 days with receipt"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Proposal",
+      "description": "Business proposals and project bids",
+      "examples": [
+        "PROJECT PROPOSAL: Digital Marketing Campaign\n\nTo: GreenTech Solutions\nFrom: Creative Marketing Agency\nDate: April 12, 2024\nProposal #: CMA-2024-078\n\nPROJECT OVERVIEW:\nComprehensive digital marketing campaign to increase brand awareness and lead generation for GreenTech's new solar panel product line.\n\nSCOPE OF WORK:\n1. Market Research & Competitor Analysis\n2. Brand Positioning Strategy\n3. Website Optimization & SEO\n4. Social Media Campaign (LinkedIn, Facebook, Instagram)\n5. Google Ads & PPC Management\n6. Content Creation (blogs, videos, infographics)\n7. Email Marketing Automation\n8. Performance Analytics & Reporting\n\nTIMELINE: 6 months (May - October 2024)\nBUDGET: $85,000 total\n- Strategy & Planning: $15,000\n- Creative Development: $25,000\n- Media Spend: $35,000\n- Management & Reporting: $10,000\n\nEXPECTED OUTCOMES:\n- 40% increase in website traffic\n- 25% improvement in lead generation\n- 15% boost in brand recognition\n\nNext Steps: Schedule presentation meeting by April 20, 2024"
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Policy Document",
+      "description": "Company policies and procedures",
+      "examples": [
+        "REMOTE WORK POLICY\n\nEffective Date: January 1, 2024\nPolicy Number: HR-2024-003\nDepartment: Human Resources\nApproved By: CEO Sarah Williams\n\nPURPOSE:\nThis policy establishes guidelines for remote work arrangements to ensure productivity, security, and work-life balance while maintaining company standards.\n\nELIGIBILITY:\n- Employees with 6+ months tenure\n- Roles suitable for remote work\n- Demonstrated self-management skills\n- Manager approval required\n\nREQUIREMENTS:\n1. WORKSPACE: Dedicated, professional workspace with reliable internet (minimum 25 Mbps)\n2. EQUIPMENT: Company-provided laptop, monitor, and security software\n3. AVAILABILITY: Core hours 10 AM - 3 PM in company timezone\n4. COMMUNICATION: Daily check-ins, weekly team meetings, monthly one-on-ones\n5. SECURITY: VPN usage mandatory, confidential data protection protocols\n\nPERFORMANCE STANDARDS:\n- Maintain same productivity levels as in-office work\n- Meet all deadlines and deliverables\n- Participate actively in virtual meetings\n- Complete monthly remote work assessment\n\nVIOLATIONS:\nFailure to comply may result in termination of remote work privileges or disciplinary action.\n\nREVIEW: Policy reviewed annually or as business needs change."
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Memo",
+      "description": "Internal company communications and announcements",
+      "examples": [
+        "MEMORANDUM\n\nTO: All Employees\nFROM: David Rodriguez, IT Director\nDATE: May 8, 2024\nSUBJECT: Mandatory Security Training and System Updates\n\nDear Team,\n\nThis memo serves to inform all employees of upcoming mandatory cybersecurity training and critical system updates scheduled for the week of May 20-24, 2024.\n\nSECURITY TRAINING:\n- Online module: \"Phishing Prevention & Data Protection\"\n- Duration: 45 minutes\n- Deadline: May 31, 2024\n- Access: Company learning portal\n- Completion certificate required\n\nSYSTEM UPDATES:\n- Email server maintenance: May 22, 6 PM - 10 PM\n- CRM system upgrade: May 23, 8 PM - 12 AM\n- Network firewall update: May 24, 7 PM - 9 PM\n\nDURING MAINTENANCE:\n- Limited email access expected\n- CRM will be completely unavailable\n- VPN connections may be intermittent\n- Emergency IT contact: (555) 123-4567\n\nACTION REQUIRED:\n1. Complete security training by deadline\n2. Save important work before maintenance windows\n3. Plan alternative communication methods\n4. Update passwords following new security guidelines\n\nQuestions? Contact IT Help Desk at ext. 2500 or helpdesk@company.com\n\nThank you for your cooperation."
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Legal Notice",
+      "description": "Legal notifications and compliance documents",
+      "examples": [
+        "LEGAL NOTICE - PRIVACY POLICY UPDATE\n\nNotice Date: June 15, 2024\nEffective Date: July 15, 2024\nCompany: DataFlow Technologies Inc.\nNotice Type: Privacy Policy Amendment\n\nDear Valued Customers,\n\nWe are writing to inform you of important updates to our Privacy Policy in compliance with the California Consumer Privacy Act (CCPA) and General Data Protection Regulation (GDPR).\n\nKEY CHANGES:\n1. Enhanced data subject rights including right to deletion and portability\n2. Expanded cookie consent management\n3. Updated third-party data sharing disclosures\n4. New data retention schedules\n5. Additional security measures for personal information\n\nYOUR RIGHTS:\n- Access your personal data\n- Request data correction or deletion\n- Opt-out of data sales\n- Data portability requests\n- Withdraw consent at any time\n\nDATA WE COLLECT:\n- Account information and preferences\n- Usage analytics and performance data\n- Communication records\n- Payment and billing information\n- Device and browser information\n\nCONTACT INFORMATION:\nData Protection Officer: privacy@dataflow.com\nPhone: 1-800-555-0123\nMail: 123 Privacy Lane, San Jose, CA 95110\n\nThe complete updated Privacy Policy is available at www.dataflow.com/privacy\n\nBy continuing to use our services after July 15, 2024, you acknowledge acceptance of these changes.\n\nSincerely,\nLegal Department\nDataFlow Technologies Inc."
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Technical Specification",
+      "description": "Technical requirements and system specifications",
+      "examples": [
+        "TECHNICAL SPECIFICATION DOCUMENT\n\nProject: E-Commerce Platform API v2.0\nDocument Version: 1.3\nDate: July 20, 2024\nAuthor: Engineering Team\nApproved By: CTO Lisa Park\n\nSYSTEM OVERVIEW:\nRESTful API for e-commerce platform supporting product catalog, user management, order processing, and payment integration.\n\nTECHNICAL REQUIREMENTS:\n\nARCHITECTURE:\n- Microservices architecture with Docker containers\n- API Gateway: Kong\n- Load Balancer: NGINX\n- Message Queue: Redis\n- Database: PostgreSQL 14+ with read replicas\n\nPERFORMANCE SPECIFICATIONS:\n- Response Time: <200ms for 95% of requests\n- Throughput: 10,000 requests per second\n- Availability: 99.9% uptime SLA\n- Concurrent Users: 50,000 simultaneous\n\nSECURITY REQUIREMENTS:\n- OAuth 2.0 authentication\n- JWT token-based authorization\n- TLS 1.3 encryption for all communications\n- Rate limiting: 1000 requests/hour per user\n- Input validation and SQL injection prevention\n\nAPI ENDPOINTS:\n- GET /api/v2/products - Product catalog\n- POST /api/v2/orders - Order creation\n- PUT /api/v2/users/{id} - User profile updates\n- DELETE /api/v2/cart/{id} - Cart item removal\n\nDATA FORMATS:\n- Request/Response: JSON\n- Date Format: ISO 8601\n- Currency: USD with 2 decimal precision\n- Character Encoding: UTF-8\n\nTESTING REQUIREMENTS:\n- Unit test coverage: >90%\n- Integration tests for all endpoints\n- Load testing with 2x expected traffic\n- Security penetration testing\n\nDEPLOYMENT:\n- Kubernetes orchestration\n- Blue-green deployment strategy\n- Automated CI/CD pipeline\n- Environment: AWS EKS"
+      ],
+      "metadata": {}
+    }
+  ],
+  "embeddingsGenerated": false,
+  "created_at": "2024-01-10T09:00:00Z",
+  "updated_at": "2024-08-14T10:30:00Z"
+}

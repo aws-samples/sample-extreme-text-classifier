@@ -1,0 +1,80 @@
+{
+  "id": "medical_supplies",
+  "name": "Medical Supplies Classification",
+  "description": "Classification dataset for different types of medical supplies and equipment",
+  "classes": [
+    {
+      "name": "Surgical Instruments",
+      "description": "Precision tools used in surgical procedures including scalpels, forceps, scissors, and clamps",
+      "examples": [
+        "Stainless steel surgical scalpel with disposable blade for precise incisions",
+        "Hemostatic forceps for clamping blood vessels during surgery",
+        "Surgical scissors with curved blades for tissue cutting"
+      ],
+      "metadata": {
+        "category": "surgical",
+        "sterilization_required": true,
+        "regulatory_class": "Class II"
+      }
+    },
+    {
+      "name": "Diagnostic Equipment",
+      "description": "Medical devices used for patient examination and diagnosis including stethoscopes, thermometers, and blood pressure monitors",
+      "examples": [
+        "Digital stethoscope with noise cancellation for cardiac auscultation",
+        "Infrared thermometer for non-contact temperature measurement",
+        "Automatic blood pressure monitor with digital display"
+      ],
+      "metadata": {
+        "category": "diagnostic",
+        "sterilization_required": false,
+        "regulatory_class": "Class II"
+      }
+    },
+    {
+      "name": "Disposable Supplies",
+      "description": "Single-use medical items including syringes, gloves, masks, and bandages",
+      "examples": [
+        "Sterile disposable syringes with safety needles for injections",
+        "Nitrile examination gloves powder-free for patient protection",
+        "Surgical face masks with fluid resistance and bacterial filtration"
+      ],
+      "metadata": {
+        "category": "disposable",
+        "sterilization_required": true,
+        "regulatory_class": "Class I"
+      }
+    },
+    {
+      "name": "Patient Monitoring",
+      "description": "Electronic devices for continuous patient vital sign monitoring including ECG machines, pulse oximeters, and cardiac monitors",
+      "examples": [
+        "12-lead ECG machine with digital display and printing capability",
+        "Pulse oximeter with finger probe for oxygen saturation monitoring",
+        "Cardiac monitor with arrhythmia detection and alarm system"
+      ],
+      "metadata": {
+        "category": "monitoring",
+        "sterilization_required": false,
+        "regulatory_class": "Class II"
+      }
+    },
+    {
+      "name": "Rehabilitation Equipment",
+      "description": "Therapeutic devices and tools for patient recovery including wheelchairs, crutches, and exercise equipment",
+      "examples": [
+        "Lightweight wheelchair with adjustable footrests and armrests",
+        "Adjustable aluminum crutches with ergonomic hand grips",
+        "Physical therapy exercise bands with varying resistance levels"
+      ],
+      "metadata": {
+        "category": "rehabilitation",
+        "sterilization_required": false,
+        "regulatory_class": "Class I"
+      }
+    }
+  ],
+  "embeddings_generated": false,
+  "created_at": "2024-01-15T10:30:00",
+  "updated_at": "2024-01-15T10:30:00"
+}

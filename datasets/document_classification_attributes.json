@@ -1,0 +1,125 @@
+{
+    "metadata": {
+      "domain": "document types",
+      "num_classes": 6,
+      "generated_by": "Manual",
+      "model": "Custom",
+      "version": "1.0"
+    },
+    "classes": [
+      {
+        "name": "Invoice",
+        "description": "Financial invoices, bills, receipts, and billing documents containing payment information, amounts, dates, vendor details, and transaction records.",
+        "required_attributes": {
+          "operator": "AND",
+          "conditions": [
+            "must specify monetary amount to be paid",
+            "must identify both parties (payer and payee)",
+            {
+              "operator": "OR",
+              "conditions": [
+                "must be a request for payment",
+                "must be a proof of completed payment"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "Technical Manual",
+        "description": "Technical documentation, user guides, instruction manuals, API documentation, and how-to documents with procedures, specifications, and technical details.",
+        "required_attributes": {
+          "operator": "AND",
+          "conditions": [
+            "must contain instructions for operating or maintaining something",
+            "must be structured as step-by-step procedures",
+            {
+              "operator": "OR",
+              "conditions": [
+                "must describe technical specifications",
+                "must describe technical requirements",
+                "must describe technical interfaces"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "Legal Contract",
+        "description": "Legal agreements, contracts, terms of service, privacy policies, licensing agreements, and regulatory compliance documents with legal terms and conditions.",
+        "required_attributes": {
+          "operator": "AND",
+          "conditions": [
+            "must define legally binding obligations",
+            "must identify all parties involved",
+            {
+              "operator": "OR",
+              "conditions": [
+                "must contain terms of agreement",
+                "must contain terms of service",
+                "must contain legal policy statements"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "Business Report",
+        "description": "Business reports, financial statements, analytics reports, quarterly reports, and corporate communications containing data, insights, and business metrics.",
+        "required_attributes": {
+          "operator": "AND",
+          "conditions": [
+            "must analyze business performance or activities",
+            {
+              "operator": "OR",
+              "conditions": [
+                "must contain financial data",
+                "must contain operational metrics",
+                "must contain market analysis"
+              ]
+            },
+            "must cover a specific reporting period"
+          ]
+        }
+      },
+      {
+        "name": "Research Paper",
+        "description": "Academic papers, research studies, white papers, scientific publications, and scholarly articles with research findings, methodologies, and citations.",
+        "required_attributes": {
+          "operator": "AND",
+          "conditions": [
+            "must present original research or analysis",
+            {
+              "operator": "OR",
+              "conditions": [
+                "must describe quantitative methodology",
+                "must describe qualitative methodology",
+                "must describe theoretical framework"
+              ]
+            },
+            "must cite external sources"
+          ]
+        }
+      },
+      {
+        "name": "Marketing Material",
+        "description": "Promotional content, brochures, advertisements, marketing communications, product catalogs, and sales materials designed to promote products or services.",
+        "required_attributes": {
+          "operator": "AND",
+          "conditions": [
+            "must promote a product, service, or organization",
+            "must contain persuasive content",
+            {
+              "operator": "OR",
+              "conditions": [
+                "must include call to action",
+                "must include pricing information",
+                "must include contact information"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
