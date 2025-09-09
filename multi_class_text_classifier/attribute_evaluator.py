@@ -4,9 +4,12 @@ LLM-based attribute evaluator for classification validation.
 
 import json
 import logging
+import boto3
 from typing import Dict, Any, List, Tuple, Union
+from botocore.config import Config
 
 from .models.data_models import AttributeValidationResult, AttributeEvaluationConfig
+from .config import config
 
 
 logger = logging.getLogger(__name__)
@@ -14,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 class LLMAttributeEvaluator:
     """
-    LLM-based evaluator for attribute conditions using Amazon Nova Lite.
+    LLM-based evaluator for attribute conditions using Amazon Nova Lite via boto3 converse API.
     Evaluates individual conditions with LLM and handles logical operators programmatically.
     Uses lazy evaluation for OR conditions.
     """
@@ -27,34 +30,38 @@ class LLMAttributeEvaluator:
             model_config: Configuration for Amazon Nova Lite model
         """
         self.model_config = model_config
-        self._agent = None
+        self._bedrock_client = None
         
-    def _initialize_agent(self):
-        """Initialize Strands Agent with Amazon Nova Lite model configuration."""
-        if self._agent is None:
+    def _initialize_bedrock_client(self):
+        """Initialize AWS Bedrock client."""
+        if self._bedrock_client is None:
             try:
-                # Import Strands SDK
-                from strands import Agent
+                # Initialize Bedrock client
+                region = config.aws.bedrock_region
+                logger.info(f"Initializing Bedrock client in region: {region}")
                 
-                # Initialize agent with Nova Lite configuration
-                from .prompts import AttributeEvaluationPrompts
-                
-                self._agent = Agent(
-                    model=self.model_config.model_id,
-                    system_prompt=AttributeEvaluationPrompts.system_prompt(),
-                    callback_handler=None  # Disable default callback handler to prevent debug output
+                # Configure retry behavior optimized for Bedrock throttling
+                retry_config = Config(
+                    retries={
+                        'total_max_attempts': config.retry.max_attempts,
+                        'mode': config.retry.mode
+                    },
+                    read_timeout=config.retry.read_timeout,
+                    connect_timeout=config.retry.connect_timeout,
+                    max_pool_connections=config.retry.max_pool_connections
                 )
-                logger.info(f"Initialized Strands Agent with model: {self.model_config.model_id}")
                 
-            except ImportError as e:
-                logger.error(f"Failed to import Strands Agents SDK: {e}")
-                raise ImportError(
-                    "Strands Agents SDK is required for attribute evaluation. "
-                    "Please ensure it's installed and configured."
-                ) from e
+                self._bedrock_client = boto3.client(
+                    'bedrock-runtime',
+                    region_name=region,
+                    config=retry_config
+                )
+                
+                logger.info(f"Bedrock client initialized successfully with model: {self.model_config.model_id}")
+                
             except Exception as e:
-                logger.error(f"Failed to initialize Strands Agent: {e}")
-                raise RuntimeError(f"Failed to initialize LLM agent: {e}") from e
+                logger.error(f"Failed to initialize Bedrock client: {e}")
+                raise RuntimeError(f"Failed to initialize Bedrock client: {e}") from e
     
     def evaluate_attributes(
         self, 
@@ -85,8 +92,8 @@ class LLMAttributeEvaluator:
         if not attribute_definition:
             raise ValueError("Attribute definition cannot be empty")
         
-        # Initialize agent if needed
-        self._initialize_agent()
+        # Initialize Bedrock client if needed
+        self._initialize_bedrock_client()
         
         try:
             logger.debug(f"Evaluating attributes for class '{class_name}' with model {self.model_config.model_id}")
@@ -173,16 +180,31 @@ class LLMAttributeEvaluator:
             from .prompts import AttributeEvaluationPrompts
             prompt = AttributeEvaluationPrompts.single_condition_evaluation_prompt(text, class_name, condition)
             
-            # Call LLM
-            agent_result = self._agent(prompt)
+            # Call Bedrock with Converse API
+            response = self._bedrock_client.converse(
+                modelId=self.model_config.model_id,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [{"text": prompt}]
+                    }
+                ],
+                inferenceConfig={
+                    "temperature": self.model_config.temperature,
+                    "maxTokens": self.model_config.max_tokens
+                }
+            )
             
-            # Extract response text
-            if hasattr(agent_result, 'message'):
-                response_text = agent_result.message
-            elif isinstance(agent_result, dict) and 'message' in agent_result:
-                response_text = agent_result['message']
-            else:
-                response_text = str(agent_result)
+            # Extract response text from Bedrock Converse API response
+            output = response.get('output', {})
+            message = output.get('message', {})
+            content = message.get('content', [])
+            
+            response_text = ""
+            for content_block in content:
+                if 'text' in content_block:
+                    response_text = content_block['text']
+                    break
             
             # Parse response
             satisfied = self._parse_boolean_response(response_text)
